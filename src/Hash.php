@@ -9,6 +9,10 @@ namespace Larva\Hashing;
 
 use think\Facade;
 
+/**
+ * Class Hash
+ * @mixin HashManager
+ */
 class Hash extends Facade
 {
     /**

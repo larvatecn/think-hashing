@@ -4,12 +4,15 @@ namespace Larva\Hashing;
 
 use think\Manager;
 
+/**
+ * Class HashManager
+ */
 class HashManager extends Manager
 {
     /**
      * Create an instance of the Bcrypt hash Driver.
      *
-     * @return \Larva\Hashing\BcryptHasher
+     * @return BcryptHasher
      */
     public function createBcryptDriver()
     {
@@ -19,7 +22,7 @@ class HashManager extends Manager
     /**
      * Create an instance of the Argon2i hash Driver.
      *
-     * @return \Larva\Hashing\ArgonHasher
+     * @return ArgonHasher
      */
     public function createArgonDriver()
     {
