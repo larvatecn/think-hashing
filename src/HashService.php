@@ -14,5 +14,9 @@ class HashService extends \think\Service
         $this->app->bind(HashManager::class, function () {
             return new HashManager($this->app);
         });
+
+        $this->app->bind('hash.driver', function () {
+            return $this->app->make(HashManager::class)->driver();
+        });
     }
 }
