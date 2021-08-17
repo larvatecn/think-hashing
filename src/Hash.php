@@ -11,6 +11,8 @@ use think\Facade;
 
 /**
  * Class Hash
+ * @method static string make($value, array $options = [])
+ * @method static bool check($value, $hashedValue, array $options = [])
  * @mixin HashManager
  */
 class Hash extends Facade
@@ -22,6 +24,6 @@ class Hash extends Facade
      */
     protected static function getFacadeClass(): string
     {
-        return 'hash';
+        return HashManager::class;
     }
 }

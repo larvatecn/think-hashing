@@ -17,7 +17,7 @@
         },
         "think": {
             "services": [
-                "Larva\\Hashing\\HashServiceProvider"
+              "Larva\\Hashing\\HashService"
             ],
             "config":{
                 "hashing": "config/hashing.php"
